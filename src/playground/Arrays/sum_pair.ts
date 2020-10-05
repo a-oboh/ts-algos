@@ -36,3 +36,35 @@ function hasPairWithSum(arr: number[], sum: number) {
 
   return false;
 }
+
+// Challenge: Given an array of unordered numbers and a sum,
+//   is there a pair of numbers which add up to the sum?
+//   If so, return the index of each number in the pair.
+
+function twoSum(nums: number[], target: number): number[] {
+  let newArr: number[] = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      let tempSum = nums[i] + nums[j];
+
+      if (i == j) {
+        continue;
+      }
+
+      // console.log(tempSum);
+      // console.log(j);
+
+      if (tempSum == target) {
+        newArr.push(i);
+        newArr.push(j);
+        return newArr;
+      }
+    }
+  }
+
+  return newArr;
+}
+
+let r = twoSum([3, 2, 4], 6);
+console.log(r);
