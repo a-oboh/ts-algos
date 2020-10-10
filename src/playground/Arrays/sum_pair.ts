@@ -66,5 +66,32 @@ function twoSum(nums: number[], target: number): number[] {
   return newArr;
 }
 
-let r = twoSum([3, 2, 4], 6);
-console.log(r);
+//Solution 2: more efficient (using sum complements)
+
+function twoSum2(nums: number[], target: number): number[] {
+  type tnumsObj = {
+    [key: number]: number;
+  };
+
+  let newArr: number[] = [];
+
+  let numsObj: tnumsObj = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    const item: number = nums[i];
+
+    numsObj[target - item] = i;
+
+    if (numsObj[item]) {
+      newArr = [numsObj[item], numsObj[target - item]];
+    }
+  }
+
+  return newArr;
+}
+
+// let sumArr = twoSum([3, 2, 4], 6);
+// console.log(sumArr);
+
+let sumArr2 = twoSum([2, 7, 11, 15], 9);
+console.log(sumArr2);
