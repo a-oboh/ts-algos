@@ -10,12 +10,14 @@ class LinkedList {
       next: null,
     };
     this.tail = this.head;
+    this.length = 1;
   }
 
   head: ListNode;
   tail: ListNode;
-  length;
+  length: number;
 
+  //add to back/end
   append(value: any) {
     let add: ListNode = this.tail;
 
@@ -28,12 +30,26 @@ class LinkedList {
 
     this.head.next = add;
 
-    console.log(this.head.next);
+    this.length++;
+
+    // console.log(this.head.next);
+  }
+
+  //add to front
+  prepend(value: any) {
+    let add: ListNode = this.head;
+
+    this.head = {
+      value: value,
+      next: add,
+    };
+
+    this.length++;
   }
 }
 
 const linkedList1 = new LinkedList(10);
 linkedList1.append(5);
 linkedList1.append(16);
-linkedList1.append(12);
-// console.log(linkedList1);
+linkedList1.prepend(8);
+console.log(linkedList1);
