@@ -28,8 +28,6 @@ class LinkedList {
     this.tail.next = newNode;
     this.tail = newNode;
 
-    // add.next = this.tail;
-
     this.length++;
   }
 
@@ -108,15 +106,41 @@ class LinkedList {
 
     return arr;
   }
+
+  reverse() {
+    //check if there's one node
+    if (!this.head.next) {
+      return this.head;
+    }
+
+    let first = this.head;
+    let second = first.next;
+
+    //as long as second is not null
+    while (second) {
+      //third node
+      const temp = second.next;
+      second.next = first;
+      first = second;
+      second = temp;
+    }
+
+    this.head.next = null;
+    this.head = first;
+
+    return this.head;
+  }
 }
 
-const linkedList1 = new LinkedList(10);
-linkedList1.append(5);
-linkedList1.append(16);
-linkedList1.prepend(8);
-linkedList1.insert(2, 99);
+const linkedList1 = new LinkedList(1);
+linkedList1.append(2);
+linkedList1.append(3);
+linkedList1.prepend(0);
+linkedList1.insert(2, 4);
 linkedList1.insert(3, 88);
 linkedList1.remove(2);
+console.log(linkedList1.printList());
+linkedList1.reverse();
 console.log(linkedList1.printList());
 
 // function gcdOfStrings(str1: string, str2: string): string {
