@@ -29,6 +29,8 @@ class LinkedList {
     this.tail = newNode;
 
     this.length++;
+
+    return this.head;
   }
 
   //add to front
@@ -42,6 +44,8 @@ class LinkedList {
     this.head = newNode;
 
     this.length++;
+
+    return this.head;
   }
 
   insert(index, val) {
@@ -64,7 +68,7 @@ class LinkedList {
     newNode.next = nextNode;
 
     this.length++;
-    return this.printList();
+    return this.head;
   }
 
   remove(index) {
@@ -80,7 +84,7 @@ class LinkedList {
 
     this.length--;
 
-    return this.printList();
+    return this.head;
   }
 
   traverseToIndex(index): ListNode {
