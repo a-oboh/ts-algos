@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
-        "nums"
+        "nums",
+        "succ"
     ],
     "cSpell.enableFiletypes": [
         "dart"
