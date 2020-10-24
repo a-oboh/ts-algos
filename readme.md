@@ -26,3 +26,6 @@ This repository contains implementations of some of the most Data structures and
 - Install Typescript globally via npm `npm install -g typescript`
 - Clone repo and install dependencies `npm install`
 - Run files separately
+
+### Resources
+- [Visualize Data structures and algorithms with Visualgo](https://visualgo.net/en)
