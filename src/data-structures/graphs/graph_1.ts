@@ -1,6 +1,7 @@
-// interface AdjList<P> {}
+// interface AdjList<Parent> {}
 
-class Graph<P, C> {
+// A directionless, unweighted graph
+class Graph<Parent, Child> {
   numberOfNodes: number;
   adjacentList;
 
@@ -9,20 +10,20 @@ class Graph<P, C> {
     this.adjacentList = {};
   }
 
-  addNode(node: P) {
+  addNode(node: Parent) {
     if (this.adjacentList[node]) {
       return this;
     }
 
-    const children: Array<C> = [];
+    const children: Array<Child> = [];
     this.adjacentList[node] = children;
     this.numberOfNodes++;
 
     return this;
   }
 
-  addEdge(node1: P, node2: C) {
-    const children: Array<C> = this.adjacentList[node1];
+  addEdge(node1: Parent, node2: Child) {
+    const children: Array<Child> = this.adjacentList[node1];
 
     children.push(node2);
 
