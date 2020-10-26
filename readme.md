@@ -21,6 +21,9 @@ This repository contains implementations of some of the most Data structures and
 ### Algorithms
 - **WIP**
 
+### Patterns
+- **WIP**
+
 ### Setting up
 - You'd need to have `node js` installed
 - Install Typescript globally via npm `npm install -g typescript`
