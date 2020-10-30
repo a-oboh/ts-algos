@@ -1,21 +1,16 @@
-let factorial: number = 1;
-
 function findFactorialRecursive(number: number) {
-  if (number < 1) {
-    return factorial;
+  if (number == 2) {
+    return 2;
   }
 
-  factorial *= number;
-  number--;
-
-  return findFactorialRecursive(number);
+  return number * findFactorialRecursive(--number);
 }
 
 function findFactorialIterative(number: number) {
   let factorial: number = 1;
 
   for (let i = number; i > 0; i--) {
-    factorial = i * factorial;
+    factorial *= i;
   }
 
   console.log(factorial);
@@ -23,7 +18,7 @@ function findFactorialIterative(number: number) {
   return factorial;
 }
 
-findFactorialIterative(5);
-const recursive = findFactorialRecursive(5);
+findFactorialIterative(15);
+const recursive = findFactorialRecursive(15);
 
 console.log(recursive);
