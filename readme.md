@@ -1,6 +1,6 @@
 # Data Structures & Algorithms with Typescript
 
-This repository contains implementations of some of the most Data structures and algorithms in typescript, useful for interview preparations, personal interest and anything in-between.
+This repository contains implementations of some of the most common Data structures and algorithms in typescript, useful for interview preparations, personal interest and anything in-between.
 
 ## Topics
 
