@@ -2,7 +2,7 @@
 
 This repository contains implementations of some of the most Data structures and algorithms in typescript, useful for interview preparations, personal interest and anything in-between.
 
-<!-- ### Topics -->
+## Topics
 
 ### Complexity analysis
 - Big O
@@ -18,17 +18,20 @@ This repository contains implementations of some of the most Data structures and
 - Queues (WIP)
 - Graphs (WIP)
 
-### Algorithms
-- **WIP**
+### Algorithms (WIP)
+- **Sorting**
+  - Bubble sort
+  - Selection sort
+  - Insertion Sort
 
-### Patterns
+### Problem Solving Patterns
 - **WIP**
 
 ### Setting up
 - You'd need to have `node js` installed
 - Install Typescript globally via npm `npm install -g typescript`
 - Clone repo and install dependencies `npm install`
-- Run files separately
+- Run files individually
 
 ### Resources
 - [Visualize Data structures and algorithms with Visualgo](https://visualgo.net/en)
