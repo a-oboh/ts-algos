@@ -33,7 +33,7 @@ This repository contains implementations of some of the most common Data structu
 - You'd need to have `node js` installed
 - Install Typescript globally via npm `npm install -g typescript`
 - Clone repo and install dependencies `npm install`
-- Run files individually
+- Run files individually e.g `nodemon src/algorithms/sorting/merge-sort/merge_sort.ts`
 
 ### Resources
 - [Visualize Data structures and algorithms with Visualgo](https://visualgo.net/en)
