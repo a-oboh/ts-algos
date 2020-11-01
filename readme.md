@@ -23,6 +23,7 @@ This repository contains implementations of some of the most Data structures and
   - Bubble sort
   - Selection sort
   - Insertion Sort
+  - Merge sort
 
 ### Problem Solving Patterns
 - **WIP**
