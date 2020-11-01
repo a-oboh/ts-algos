@@ -19,7 +19,8 @@ This repository contains implementations of some of the most common Data structu
 - Graphs (WIP)
 
 ### Algorithms (WIP)
-- **Sorting**
+- Recursion
+- Sorting
   - Bubble sort
   - Selection sort
   - Insertion Sort
