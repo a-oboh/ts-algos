@@ -1,6 +1,6 @@
 # Interview Cheat Sheet
 
-From Andrei Neagoie's Master The Coding Interview: Data Structures + Algorithms
+(From Andrei Neagoie's Master The Coding Interview: Data Structures + Algorithms)
 
 ## The 3 pillars of good code:
 
