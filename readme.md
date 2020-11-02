@@ -25,6 +25,7 @@ This repository contains implementations of some of the most common Data structu
   - Selection sort
   - Insertion Sort
   - Merge sort
+  - Quick sort
 
 ### Problem Solving Patterns
 - **WIP**
