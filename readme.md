@@ -24,12 +24,13 @@ This repository contains implementations of some of the most common Data structu
 
 - Recursion
 - Sorting
-  - Bubble sort
-  - Selection sort
+  - Bubble Sort
+  - Selection Sort
   - Insertion Sort
-  - Merge sort
+  - Merge Sort
 - Searching
   - Linear Search
+  - Breadth First Search (BFS)
 
 ### Problem Solving Patterns
 

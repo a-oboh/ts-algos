@@ -183,3 +183,5 @@ tree.remove(20);
 
 const json = JSON.stringify(traverse(tree.root));
 console.log(json);
+
+export {}
