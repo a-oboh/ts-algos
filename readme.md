@@ -28,6 +28,7 @@ This repository contains implementations of some of the most common Data structu
   - Selection Sort
   - Insertion Sort
   - Merge Sort
+  - Quick sort
 - Searching
   - Linear Search
   - Breadth First Search (BFS)
