@@ -90,8 +90,25 @@ function twoSum2(nums: number[], target: number): number[] {
   return newArr;
 }
 
+function sumSub(arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    const item1 = arr[i];
+    let sum: number = 0;
+    console.log(item1);
+    for (let j = 0; j < i + num - 1; j++) {
+      // sum += arr[i] + arr[j];
+      console.log(arr[j]);
+    }
+    // console.log(sum);
+  }
+}
+
+sumSub([2, 6, 9, 2, 1, 8], 3);
+
 // let sumArr = twoSum([3, 2, 4], 6);
 // console.log(sumArr);
 
-let sumArr2 = twoSum([2, 7, 11, 15], 9);
-console.log(sumArr2);
+// let sumArr2 = twoSum([2, 7, 11, 15], 9);
+// console.log(sumArr2);
+
+export {};
