@@ -17,7 +17,7 @@ This repository contains implementations of some of the most common Data structu
 - Doubly Linked List
 - Trees
 - Stacks
-- Queues (WIP)
+- Queues
 - Graphs (WIP)
 
 ### Algorithms (WIP)
