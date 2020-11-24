@@ -1,24 +1,24 @@
-class Node {
-  left?: any;
-  right?: Node | null;
-  value: Node | null;
-  constructor(value: Node) {
+class TreeNode {
+  left?: TreeNode | null;
+  right?: TreeNode | null;
+  value: TreeNode | null;
+  constructor(value: TreeNode) {
     this.left = null;
     this.right = null;
     this.value = value;
   }
 }
 
-//BST with Binary first search!!!
+//BST with Breadth first search!!!
 class BinarySearchTree {
-  root: Node;
-  
+  root: TreeNode;
+
   constructor() {
     this.root = null;
   }
 
   insert(value: any) {
-    const newNode = new Node(value);
+    const newNode = new TreeNode(value);
     if (this.root === null) {
       this.root = newNode;
     } else {
@@ -174,11 +174,11 @@ console.log("BFS", tree.BreadthFirstSearch());
 //  4     20
 //1  6  15  170
 
-function traverse(node: Node) {
-  const tree: Node = { value: node.value };
+function traverse(node: TreeNode) {
+  const tree: TreeNode = { value: node.value };
   tree.left = node.left === null ? null : traverse(node.left);
   tree.right = node.right === null ? null : traverse(node.right);
   return tree;
 }
 
-export {};
+export { tree, TreeNode };
