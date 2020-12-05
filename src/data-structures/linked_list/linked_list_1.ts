@@ -1,13 +1,13 @@
 interface ListNode {
-  value: any;
+  val: any;
   next: ListNode | null;
   prev?: ListNode | null;
 }
 
-class LinkedList {
-  constructor(value: any) {
+export class LinkedList {
+  constructor(val: any) {
     this.head = {
-      value: value,
+      val: val,
       next: null,
     };
     this.tail = this.head;
@@ -18,10 +18,10 @@ class LinkedList {
   tail: ListNode;
   length: number;
 
-  //add to back/end
-  append(value: any) {
+  //add to back/end of list
+  append(val: any) {
     let newNode: ListNode = {
-      value: value,
+      val: val,
       next: null,
     };
 
@@ -34,9 +34,9 @@ class LinkedList {
   }
 
   //add to front
-  prepend(value: any) {
+  prepend(val: any) {
     const newNode = {
-      value: value,
+      val: val,
       next: null,
     };
 
@@ -58,7 +58,7 @@ class LinkedList {
     }
 
     const newNode: ListNode = {
-      value: val,
+      val: val,
       next: null,
     };
 
@@ -104,7 +104,7 @@ class LinkedList {
     let currentNode = this.head;
 
     while (currentNode != null) {
-      arr.push(currentNode.value);
+      arr.push(currentNode.val);
       currentNode = currentNode.next;
     }
 
@@ -152,3 +152,5 @@ console.log(linkedList1.printList());
 
 //   }
 // }
+
+export {ListNode}

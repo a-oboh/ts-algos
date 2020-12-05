@@ -1,7 +1,9 @@
+import { ListNode } from "./linked_list_1";
+
 class DoublyLinkedList {
-  constructor(value: any) {
+  constructor(val: any) {
     this.head = {
-      value: value,
+      val: val,
       prev: null,
       next: null,
     };
@@ -14,11 +16,11 @@ class DoublyLinkedList {
   length: number;
 
   //add to back/end
-  append(value: any) {
+  append(val: any) {
     const prevNode: ListNode = this.head;
 
     let newNode: ListNode = {
-      value: value,
+      val: val,
       prev: prevNode,
       next: null,
     };
@@ -32,11 +34,11 @@ class DoublyLinkedList {
   }
 
   //add to front
-  prepend(value: any) {
+  prepend(val: any) {
     const prevHead = this.head;
 
     const newNode: ListNode = {
-      value: value,
+      val: val,
       prev: null,
       next: null,
     };
@@ -58,7 +60,7 @@ class DoublyLinkedList {
     }
 
     const newNode: ListNode = {
-      value: val,
+      val: val,
       prev: null,
       next: null,
     };
@@ -109,7 +111,7 @@ class DoublyLinkedList {
     let currentNode = this.head;
 
     while (currentNode != null) {
-      arr.push(currentNode.value);
+      arr.push(currentNode.val);
       currentNode = currentNode.next;
     }
 
@@ -129,3 +131,5 @@ console.log(doublyLinkedList.printList());
 doublyLinkedList.remove(2);
 
 console.log(doublyLinkedList.printList());
+
+export {};
