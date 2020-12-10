@@ -35,12 +35,6 @@ function twoSumOptimized(nums: number[], t: number) {
   let numsMap = new Map<number, number>();
 
   for (let i = 0; i < nums.length; i++) {
-    // numsMap[t - nums[i]] = i;
-
-    // if (numsMap[nums[i]]) {
-    //   console.log([i, numsMap[nums[i]]]);
-    //   return [i, numsMap[nums[i]]];
-    // }
     if (numsMap.has(nums[i])) {
       console.log([numsMap.get(nums[i]), i]);
       return [numsMap.get(nums[i]), i];
