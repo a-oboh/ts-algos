@@ -3,15 +3,15 @@
 function isPalindrome(s: string): boolean {
   s = s.replace(/[^A-Za-z0-9]/g, "").toLowerCase();
 
-  let p1 = 0;
-  let p2 = s.length - 1;
+  let left = 0;
+  let right = s.length - 1;
 
-  while (p2 > p1) {
-    if (s[p1] !== s[p2]) {
+  while (right > left) {
+    if (s[left] !== s[right]) {
       return false;
     }
-    p1++;
-    p2--;
+    left++;
+    right--;
   }
 
   return true;
