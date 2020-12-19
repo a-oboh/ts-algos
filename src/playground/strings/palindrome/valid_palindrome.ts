@@ -21,3 +21,5 @@ let s = "A man, a plan, a canal: Panama";
 // let s = "race a car";
 
 console.log(isPalindrome(s));
+
+export {};
