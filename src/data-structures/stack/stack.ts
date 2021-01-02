@@ -34,12 +34,14 @@ export default class StackWithArray {
     //   this.bottom = null;
     // }
 
+    const currTop = this.top;
+
     this.data.pop();
     this.length--;
     this.bottom = this.data[0];
     this.top = this.data[this.length - 1];
 
-    return this.top;
+    return currTop;
   }
 }
 
