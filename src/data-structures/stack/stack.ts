@@ -1,5 +1,5 @@
 //Stack implementation with Arrays
-class StackWithArray {
+export default class StackWithArray {
   constructor() {
     this.top = null;
     this.bottom = null;
@@ -43,9 +43,10 @@ class StackWithArray {
   }
 }
 
-const myStack = new StackWithArray();
-myStack.push(30);
-myStack.push(20);
-myStack.push(10);
-myStack.pop();
-console.log(myStack.peek());
+// const myStack = new StackWithArray();
+// myStack.push(30);
+// myStack.push(20);
+// myStack.push(10);
+// myStack.pop();
+// console.log(myStack.peek());
+// console.log(myStack.top);
