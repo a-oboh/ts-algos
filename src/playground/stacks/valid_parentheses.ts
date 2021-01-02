@@ -11,19 +11,22 @@ function isValid(s: string): boolean {
 
   const seenStack = new StackWithArray();
 
+  const brackets = {
+    "(": ")",
+    "[": "]",
+    "{": "}",
+  };
+
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === "(" || s[i] === "[" || s[i] === "{") {
+    if (brackets[s[i]]) {
       seenStack.push(s[i]);
       continue;
     }
 
-    if (s[i] === "}" && seenStack.top === "{") {
-      seenStack.pop();
-    } else if (s[i] === ")" && seenStack.top === "(") {
-      seenStack.pop();
-    } else if (s[i] === "]" && seenStack.top === "[") {
-      seenStack.pop();
-    } else {
+    const leftBracket = seenStack.pop();
+    const rightBracket = brackets[leftBracket];
+
+    if (s[i] !== rightBracket) {
       return false;
     }
   }
