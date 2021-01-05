@@ -26,7 +26,7 @@ export default class StackWithArray {
   }
 
   pop() {
-    if (!this.top) {
+    if (this.top === null || this.top === undefined) {
       return null;
     }
 

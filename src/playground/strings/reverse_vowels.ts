@@ -41,6 +41,7 @@ function reverseVowelsTwoPointers(s: string): string {
 
   while (a < b) {
     if (vowels.includes(arr[a])) {
+      
     } else {break}
   }
 
