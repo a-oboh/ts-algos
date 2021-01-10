@@ -25,9 +25,9 @@ function minRemoveToMakeValid(s: string): string {
   }
 
   while (seenStack.length > 0) {
-    const popped = seenStack.pop();
+    const popIndex = seenStack.pop();
 
-    sArr.splice(popped, 1);
+    sArr[popIndex] = "";
   }
 
   return sArr.join("");
