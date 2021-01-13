@@ -1,7 +1,7 @@
 const nums = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 
 function quickSort(array: any[], left, right) {
-  let pivot: any;
+  let pivot: number;
   let partitionIndex: number;
 
   if (left < right) {
@@ -12,6 +12,7 @@ function quickSort(array: any[], left, right) {
     quickSort(array, left, partitionIndex - 1);
     quickSort(array, partitionIndex + 1, right);
   }
+  
   return array;
 }
 
