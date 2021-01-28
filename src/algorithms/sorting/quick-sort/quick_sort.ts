@@ -12,7 +12,7 @@ function quickSort(array: any[], left, right) {
     quickSort(array, left, partitionIndex - 1);
     quickSort(array, partitionIndex + 1, right);
   }
-  
+
   return array;
 }
 
@@ -37,7 +37,7 @@ function swap(array, firstIndex, secondIndex) {
 }
 
 //Select first and last index as 2nd and 3rd parameters
-quickSort(nums, 0, nums.length - 1);
-console.log(nums);
+// quickSort(nums, 0, nums.length - 1);
+// console.log(nums);
 
-export {};
+export { quickSort };
