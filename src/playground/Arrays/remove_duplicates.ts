@@ -26,8 +26,7 @@ function removeDuplicates(nums: number[]): number {
 }
 
 function removeDuplicatesOptimized(nums: number[]): number {
-  let len = nums.length,
-    x = nums[0];
+  let len = nums.length;
 
   let numsMap = new Map<number, number>();
 
@@ -41,11 +40,7 @@ function removeDuplicatesOptimized(nums: number[]): number {
     } else {
       numsMap.set(nums[i], count + 1);
     }
-
-    console.log(numsMap);
   }
-
-  console.log(nums, len);
 
   return len;
 }

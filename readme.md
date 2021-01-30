@@ -31,6 +31,8 @@ This repository contains implementations of some of the most common Data structu
   - Quick sort
 - Searching
   - Linear Search
+  - Binary Search
+  - Quick Select
   - Breadth First Search (BFS)
 
 ### Problem Solving Patterns
