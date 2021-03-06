@@ -28,6 +28,6 @@ function searchRange(nums: number[], target: number): number[] {
   return [targetIdx, targetIdx];
 }
 
-const nums = [5, 7, 7, 8, 8, 10];
+const nums = [5,7,7,8,8,10];
 
-console.log(searchRange(nums, 3));
+console.log(searchRange(nums, 8));
