@@ -49,7 +49,7 @@ Some example problems are in the `src/playground` directory, they'll be there fo
 - You'd need to have `node js` installed
 - Install Typescript globally via npm `npm install -g typescript`
 - Clone repo and install dependencies `npm install`
-- Run files individually e.g `nodemon src/algorithms/sorting/merge-sort/merge_sort.ts`
+- Run files individually e.g `tsc && node dist/algorithms/sorting/merge-sort/merge_sort.js`
 
 ## Resources
 
