@@ -1,11 +1,31 @@
 class TreeNode {
   left?: TreeNode | null;
   right?: TreeNode | null;
-  value: TreeNode | null;
-  constructor(value: TreeNode) {
-    this.left = null;
-    this.right = null;
-    this.value = value;
+  value?: number | null;
+
+  constructor(value?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    this.value = value === undefined ? 0 : value;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
+  }
+
+  insert(values: number[]) {
+    const queue = [this];
+    let i = 0;
+    while (queue.length > 0) {
+      let current = queue.shift();
+      for (let side of ["left", "right"]) {
+        if (!current[side]) {
+          if (values[i] !== null) {
+            current[side] = new TreeNode(values[i]);
+          }
+          i++;
+          if (i >= values.length) return this;
+        }
+        if (current[side]) queue.push(current[side]);
+      }
+    }
+    return this;
   }
 }
 
@@ -175,7 +195,7 @@ console.log("BFS", tree.BreadthFirstSearch());
 //1  6  15  170
 
 function traverse(node: TreeNode) {
-  const tree: TreeNode = { value: node.value };
+  const tree: TreeNode = new TreeNode(node.value);
   tree.left = node.left === null ? null : traverse(node.left);
   tree.right = node.right === null ? null : traverse(node.right);
   return tree;
