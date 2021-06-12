@@ -188,7 +188,7 @@ tree.insert(170);
 tree.insert(15);
 tree.insert(1);
 
-console.log("BFS", tree.BreadthFirstSearch());
+// console.log("BFS", tree.BreadthFirstSearch());
 
 //     9
 //  4     20
